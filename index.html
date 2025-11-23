@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RuaaPro - منصة الحلول الرقمية</title>
+
+<style>
+/* إعدادات أساسية */
+body {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  background: #f7f5fc;
+}
+
+/* هيدر */
+header {
+  background: linear-gradient(135deg, #7a3db8, #e24dbf);
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+header img {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+nav {
+  background: white;
+  padding: 15px 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7a3db8;
+}
+
+nav select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* قسم الخدمات */
+.services {
+  padding: 50px 30px;
+}
+
+.services h2 {
+  text-align: center;
+  color: #7a3db8;
+  margin-bottom: 30px;
+}
+
+.service-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 15px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* نموذج الطلب */
+.form-section {
+  padding: 60px 25px;
+  background: #fff;
+}
+
+form {
+  max-width: 700px;
+  margin: auto;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #7a3db8;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #692ea5;
+}
+
+/* زر واتساب ثابت */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #25d366;
+  padding: 12px 18px;
+  border-radius: 40px;
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* فوتر */
+footer {
+  background: #7a3db8;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- الهيدر -->
+<header>
+    <img src="logo.png" alt="RuaaPro Logo">
+    <h1>منصة RuaaPro</h1>
+    <p>حلول رقمية حديثة تدعم الأفراد والمنشآت</p>
+</header>
+
+<!-- القائمة -->
+<nav>
+    <div class="menu">القائمة</div>
+    <select onchange="location.href=this.value;">
+        <option selected disabled>اختر خدمة</option>
+        <option value="#">تحليل البيانات</option>
+        <option value="#">الأتمتة وتحسين العمليات</option>
+        <option value="#">تصميم صفحات الهبوط</option>
+        <option value="#">حلول الذكاء الاصطناعي</option>
+    </select>
+</nav>
+
+<!-- الخدمات -->
+<section class="services">
+    <h2>الخدمات الرئيسية</h2>
+
+    <div class="service-box">
+        <h3>📊 تحليل وإعداد التقارير</h3>
+        <p>تحليل احترافي، لوحات معلومات، إعداد تقارير ذكية.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>⚙️ الأتمتة وتحسين العمليات</h3>
+        <p>أتمتة المهام باستخدام أحدث التقنيات.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>💻 تصميم صفحات المواقع</h3>
+        <p>صفحات هبوط احترافية وجذابة.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>🤖 حلول الذكاء الاصطناعي</h3>
+        <p>بوتات ذكية – أتمتة – مساعدون رقميون.</p>
+    </div>
+</section>
+
+<!-- نموذج الطلب -->
+<section class="form-section">
+<h2 style="text-align:center;color:#7a3db8;">قدّم طلبك الآن</h2>
+
+<form>
+    <input type="text" placeholder="الاسم الكامل" required>
+
+    <select>
+        <option disabled selected>اختر الخدمة المطلوبة</option>
+        <option>تحليل البيانات</option>
+        <option>أتمتة العمليات</option>
+        <option>تصميم صفحات</option>
+        <option>ذكاء اصطناعي</option>
+    </select>
+
+    <textarea rows="5" placeholder="وصف الخدمة المطلوبة بالتفصيل"></textarea>
+
+    <textarea rows="3" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+
+    <button>إرسال الطلب</button>
+</form>
+</section>
+
+<!-- فوتر -->
+<footer>
+    <p>© جميع الحقوق محفوظة لمنصة RuaaPro</p>
+    <p>البريد: ruaapro.sa@gmail.com</p>
+    <p>رابط المنصة: <a href="https://ruaapro.sa" style="color:#fff;">اضغط هنا</a></p>
+</footer>
+
+<!-- واتساب -->
+<a class="whatsapp" href="https://wa.me/966554633579">تواصل واتساب</a>
+
+</body>
+</html>
 
